@@ -1,149 +1,105 @@
+# Hi, I'm Varshitha Munnuru
 
-# Hi there, I'm Varshitha Munnuru 👋
+Computer Science and Technology student at Symbiosis Institute of Technology, Hyderabad, interested in Data Analytics, Artificial Intelligence, Machine Learning, Deep Learning, and Computer Vision.
 
-### Computer Science Student | Data Analytics | AI & Machine Learning | Computer Vision
+I enjoy building technology-driven projects, exploring research ideas, and developing practical solutions to real-world problems.
 
-I'm a Computer Science and Technology undergraduate at Symbiosis Institute of Technology, Hyderabad, interested in data-driven solutions, artificial intelligence, deep learning, computer vision, and research.
+## Projects
 
-I enjoy exploring challenging technical problems, developing practical projects, and continuously expanding my knowledge of emerging technologies.
+### 1. Smart Traffic Prediction
+**Traffic and Accident Prevention**
 
----
+An AI-driven approach to understanding traffic behaviour and identifying situations that may lead to congestion and accidents, with data-driven recommendations.
 
-## 🔬 Research Work
-
-### 1. Fairness and Accuracy in Machine Learning
-- Comparing supervised machine learning classifiers based on predictive accuracy and fairness.
-- Investigating whether the most accurate model is also the fairest.
-- Evaluating differences in model outcomes across demographic groups.
-- Exploring fairness-aware techniques to reduce bias while maintaining predictive performance.
-
-### 2. AI-Based Smart Traffic Prediction
-- Exploring traffic speed prediction using real-world traffic sensor data.
-- Working with the METR-LA traffic dataset.
-- Studying Long Short-Term Memory (LSTM) networks for time-series prediction.
-- Investigating traffic patterns and relationships between sensor locations.
-
-### 3. Federated Supervised Learning Under Heterogeneous and Unreliable Clients
-- Exploring reliability-aware aggregation in federated learning.
-- Studying challenges caused by heterogeneous data distributions, class imbalance, and unreliable client updates.
-- Investigating approaches beyond conventional Federated Averaging (FedAvg).
-
-*Research status and implementation details should be updated to reflect the work completed on each paper.*
-
----
-
-## 🚀 Projects
-
-### 1. Neon Air Draw — AI Spatial Interface
-- Exploring gesture-based interaction for drawing in the air.
-- Combining computer vision and AI concepts for spatial interaction.
-- Focus: Hand gestures, visual interaction, and intuitive interfaces.
+**Technologies:** TensorFlow, Keras, NLP, Scikit-learn, NumPy, Pandas
 
 ### 2. Digital Reliability Scoring System (DRSS)
-- Designed around measuring digital platform reliability using system performance indicators.
-- Considers crash rate, latency variation, error density, and recovery efficiency.
-- Uses reliability indices to calculate a platform-level trust score.
-- Intended applications include banking, e-commerce, and digital services.
+**Reliability and Data Analytics**
 
-### 3. AI-Based Smart Traffic Prediction and Accident Prevention
-- Explores traffic speed prediction using historical sensor data.
-- Uses the METR-LA dataset for traffic analysis.
-- Investigates LSTM-based time-series forecasting.
-- Aims to support congestion analysis and traffic-aware decision-making.
+Treats digital reliability as a measurable variable instead of relying only on user ratings. It examines crash rate, latency variation, error density, and recovery rate.
 
-### 4. Movie Recommendation System Using Data Structures
-- A project exploring movie recommendations using data structures and programming concepts.
-- Focuses on organizing movie information and retrieving relevant recommendations efficiently.
+**Technologies:** Python, Flask, MySQL, Data Analytics
 
-### 5. Smart Lock Box with Temperature Display and PIN Security
-- Designed around PIN-based access control.
-- Uses an Arduino, DHT11 temperature sensor, servo motor, and buzzer.
-- Combines basic embedded systems and sensor integration.
+### 3. Neon Air Draw — AI Spatial Interface
+**Computer Vision**
 
-### 6. Smart Agriculture for Hilly Regions
-- Explores sensor-based monitoring for agricultural environments.
-- Uses an ESP8266 NodeMCU and an ultrasonic sensor.
-- Focuses on practical IoT applications for agriculture.
+A computer-vision interface that uses hand gestures and spatial movement for real-time digital interaction.
 
----
+**Technologies:** OpenCV, Computer Vision, AI
 
-## 🛠️ Technical Skills
+### 4. Smart Agriculture for Hilly Regions
+**IoT-Based Agricultural Monitoring**
 
-### Programming and Computer Science
-- Java
-- Data Structures and Algorithms
-- Python
+Sensor-based agricultural monitoring designed for challenging hilly environments.
 
-### Data Analytics and Databases
-- Microsoft Excel
-- SQL
-- MySQL
-- Power BI
+**Technologies:** NodeMCU ESP8266, Ultrasonic Sensor, IoT
 
-### AI, Machine Learning and Computer Vision
-- Supervised Machine Learning
-- Deep Learning
-- Computer Vision
-- Image Processing
-- LSTM Networks
-- Model Evaluation and Fairness Analysis
+### 5. Movie Recommendation System
+**Data Structures in C**
 
-### Frameworks and Development Tools
-- Flask
-- Git and GitHub
-- VS Code
-- XAMPP
+Recommendation logic built on organising and searching data with fundamental data structures.
 
-### AI and Productivity Tools
-- ChatGPT
-- Claude
-- Google Gemini
-- NotebookLM
-- Stitch
-- Roboflow
+**Technologies:** C, Data Structures
 
----
+### 6. Parking Lot System
+**Parking Management**
 
-## 📚 Education
+Organises vehicle information, parking allocation, and available parking spaces.
+
+**Concepts:** Data Organisation, Space Allocation
+
+## Research Work
+
+### 1. Smart Agriculture for Hilly Regions
+
+Explores sensor-based agricultural monitoring approaches for geographically challenging environments.
+
+**Research Areas:** IoT, Sensors, Agricultural Monitoring
+
+### 2. Soil Moisture Monitoring System
+
+Explores monitoring soil moisture levels using sensors to understand soil conditions and support informed irrigation decisions.
+
+**Research Areas:** Soil Moisture Sensors, IoT, Smart Agriculture
+
+### 3. AI-Based Blood Group Detection
+
+Explores a computer-vision and deep-learning approach to classifying blood groups from fingerprint images using image processing and classification techniques.
+
+**Technologies:** TensorFlow, Keras, OpenCV, Roboflow, NumPy, Pandas
+
+*Note: This is an experimental research concept and is not a medically validated diagnostic method.*
+
+### 4. Digital Reliability Scoring System (DRSS)
+
+Investigates how digital platform reliability can be quantified using measurable system-performance indicators.
+
+**Research Areas:** Reliability Analysis, Performance Metrics, Data Analytics
+
+## Technical Skills
+
+- **Programming:** Python, C, Java
+- **Data Analytics:** Excel, Power BI, NumPy, Pandas, SQL, MySQL
+- **AI and Machine Learning:** Supervised Machine Learning, Deep Learning, Computer Vision, Image Processing
+- **Frameworks and Libraries:** TensorFlow, Keras, Scikit-learn, OpenCV, Flask
+- **Tools:** GitHub, VS Code, XAMPP, Roboflow
+- **AI Tools:** ChatGPT, Claude, Google Gemini, NotebookLM, Stitch
+
+## Education
 
 **B.Tech — Computer Science and Technology**  
 Symbiosis Institute of Technology, Hyderabad  
-2024–2028
+2024–2028 | **CGPA: 8.11/10**
 
-**Intermediate**  
-NTR Junior College, Himayatnagar  
-2022–2024 | 88.8%
-
----
-
-## 👩‍💼 Leadership and Activities
+## Leadership and Campus Involvement
 
 - Chairperson — IEEE Education Society Student Branch Chapter
 - Chairperson — Rotaract Club
 - Chairperson — Campus Wellness Advisory Committee
-- Secretary — Grievance Redressal Committee
-- Fresher's Day Event Head for the 2025–2029 batch
-- Actively involved in student leadership, event organization, and college initiatives.
+- Fresher's Day Event Head — 2025–2029 Batch
 
----
+## Connect With Me
 
-## 💡 Areas of Interest
-
-- Data Analytics
-- Artificial Intelligence and Machine Learning
-- Computer Vision and Image Processing
-- Deep Learning
-- Research and Experimental Evaluation
-- Data-Driven Problem Solving
-
----
-
-## 🌐 Connect With Me
-
-- LinkedIn: [Varshitha Munnuru](https://www.linkedin.com/in/varshithamunnuru)
-- GitHub: [VarshithaMunnuru18](https://github.com/VarshithaMunnuru18)
-- Email: varshithamunnuru@gmail.com
-
----
-
-*Always learning, experimenting, and building data-driven solutions.*
+- **GitHub:** [VarshithaMunnuru18](https://github.com/VarshithaMunnuru18)
+- **LinkedIn:** [Varshitha Munnuru](https://www.linkedin.com/in/varshithamunnuru)
+- **Portfolio:** [Visit My Portfolio](https://varshithamunnuru18.github.io/VarshithaMunnuru/)
