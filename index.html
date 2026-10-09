@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Varshitha Munnuru Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Caveat:wght@500;600&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: soft drifting-colour backdrop, floating pill nav, centred hero, masonry "pinboard" for projects, typographic lists for research and leadership. */
+:root{
+  --bg:#fbf6f3; --ink:#2b2326; --soft:#6d6064; --line:rgba(168,96,122,.28);
+  --rose:#c98f9d; --rose-deep:#a05672; --sage:#8fa98c; --sand:#d9bf9a;
+  --card:rgba(255,255,255,.66); --card-edge:rgba(255,255,255,.9);
+  --b1:#f0b9c7; --b2:#c9dcc6; --b3:#f1dcbc; --b4:#e8c6d6;
+  --c-rose:#f6d6de; --c-sage:#dbe7d8; --c-sand:#f2e4cd;
+  --pill:rgba(255,255,255,.7); --shadow:0 18px 40px -22px rgba(120,60,85,.35);
+  --display:'Cormorant Garamond','Palatino Linotype',Georgia,serif;
+  --script:'Caveat','Segoe Script','Brush Script MT',cursive;
+  --body:'DM Sans','Helvetica Neue',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#171114; --ink:#f6eaee; --soft:#bba9af; --line:rgba(226,160,178,.28);
+  --rose:#e2a0b2; --rose-deep:#eab3c1; --sage:#a9c3a5; --sand:#dcc29e;
+  --card:rgba(46,33,39,.62); --card-edge:rgba(255,255,255,.08);
+  --b1:#6b3447; --b2:#2f4a3a; --b3:#6a5230; --b4:#5a3550;
+  --c-rose:#4a2b37; --c-sage:#2c3f33; --c-sand:#4a3d2a;
+  --pill:rgba(255,255,255,.08); --shadow:0 18px 40px -22px rgba(0,0,0,.7);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171114; --ink:#f6eaee; --soft:#bba9af; --line:rgba(226,160,178,.28);
+  --rose:#e2a0b2; --rose-deep:#eab3c1; --sage:#a9c3a5; --sand:#dcc29e;
+  --card:rgba(46,33,39,.62); --card-edge:rgba(255,255,255,.08);
+  --b1:#6b3447; --b2:#2f4a3a; --b3:#6a5230; --b4:#5a3550;
+  --c-rose:#4a2b37; --c-sage:#2c3f33; --c-sand:#4a3d2a;
+  --pill:rgba(255,255,255,.08); --shadow:0 18px 40px -22px rgba(0,0,0,.7);
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;padding-inline:clamp(16px,4vw,48px);padding-block:0 48px;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1120px;margin-inline:auto}
+
+/* backdrop */
+.sky{position:fixed;inset:0;z-index:-1;overflow:hidden;background:var(--bg)}
+.sky i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.85;animation:drift 22s ease-in-out infinite alternate}
+.sky i:nth-child(1){width:46vmax;height:46vmax;left:-12vmax;top:-10vmax;background:var(--b1)}
+.sky i:nth-child(2){width:40vmax;height:40vmax;right:-12vmax;top:18vh;background:var(--b2);animation-duration:27s;animation-delay:-6s}
+.sky i:nth-child(3){width:36vmax;height:36vmax;left:12vw;bottom:-16vmax;background:var(--b3);animation-duration:31s;animation-delay:-12s}
+.sky i:nth-child(4){width:28vmax;height:28vmax;right:18vw;bottom:8vh;background:var(--b4);animation-duration:25s;animation-delay:-3s}
+.sky::after{content:"";position:absolute;inset:0;opacity:.18;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .4  0 0 0 0 .45  0 0 0 .55 0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>")}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(6vw,5vh) scale(1.12)}}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;display:flex;justify-content:center;padding-block:14px}
+nav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;margin:0;padding:6px;list-style:none;background:var(--card);border:1px solid var(--card-edge);border-radius:999px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:var(--shadow)}
+nav a{display:block;padding:6px 14px;border-radius:999px;font-size:13px;letter-spacing:.04em;text-decoration:none;color:var(--soft);transition:background .2s,color .2s}
+nav a:hover,nav a:focus-visible{background:var(--rose);color:#fff;outline:none}
+
+/* hero */
+.hero{text-align:center;padding-block:clamp(40px,9vw,96px) clamp(36px,6vw,64px)}
+.hello{font-family:var(--script);font-size:clamp(26px,4vw,38px);color:var(--rose-deep);margin:0;transform:rotate(-3deg);display:inline-block}
+h1{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(52px,12vw,132px);line-height:.95;letter-spacing:-.02em;margin:.1em 0 .2em;text-wrap:balance}
+h1 span{display:inline-block;background:linear-gradient(100deg,var(--ink) 30%,var(--rose-deep) 70%,var(--sage));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--soft);margin:0 0 18px}
+.tagline{font-family:var(--display);font-style:italic;font-size:clamp(19px,2.4vw,26px);color:var(--soft);max-width:34ch;margin:0 auto 28px;text-wrap:balance}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0 0 30px;padding:0;list-style:none}
+.chips li{padding:7px 18px;border-radius:999px;background:var(--pill);border:1px solid var(--card-edge);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;border:1px solid var(--line);background:var(--card);font:500 14px var(--body);text-decoration:none;color:var(--ink);cursor:pointer;transition:transform .2s,background .2s,color .2s;backdrop-filter:blur(10px)}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);background:var(--rose);color:#fff;outline:none}
+.btn.solid{background:var(--rose-deep);color:#fff;border-color:transparent}
+.btn.solid:hover{background:var(--rose)}
+
+/* sections */
+section{padding-block:clamp(36px,6vw,64px)}
+.eyebrow{font-family:var(--script);font-size:26px;color:var(--rose-deep);margin:0;line-height:1}
+h2{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(36px,6vw,60px);line-height:1.05;margin:.1em 0 .5em;text-wrap:balance}
+p{margin:0 0 1em}
+.glass{background:var(--card);border:1px solid var(--card-edge);border-radius:28px;box-shadow:var(--shadow);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.about>div{padding:clamp(22px,4vw,40px);min-width:0}
+.about p.lead{font-family:var(--display);font-size:clamp(21px,2.6vw,28px);line-height:1.4}
+.facts{display:grid;gap:14px;margin:0}
+.facts dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--soft)}
+.facts dd{margin:2px 0 0;font-family:var(--display);font-size:22px;font-style:italic;line-height:1.25}
+
+/* toolkit */
+.tools{padding:clamp(22px,4vw,40px);display:grid;gap:18px}
+.tool-row{display:grid;grid-template-columns:200px 1fr;gap:10px 24px;align-items:center;padding-bottom:18px;border-bottom:1px dashed var(--line)}
+.tool-row:last-child{border:0;padding-bottom:0}
+.tool-row h3{font-family:var(--display);font-style:italic;font-weight:600;font-size:24px;margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{padding:5px 14px;border-radius:999px;font-size:13px;background:var(--c-rose)}
+.tags li:nth-child(3n+2){background:var(--c-sage)}
+.tags li:nth-child(3n){background:var(--c-sand)}
+
+/* projects pinboard */
+.pins{columns:3 300px;column-gap:22px}
+.pin{break-inside:avoid;margin:0 0 22px;overflow:hidden;transition:transform .3s}
+.pin:hover{transform:translateY(-6px) rotate(-.4deg)}
+.cover{position:relative;height:var(--h,150px);display:flex;align-items:flex-end;padding:16px 20px;background:var(--cv);overflow:hidden}
+.pin:nth-child(3n+1) .cover{--cv:var(--c-rose)}
+.pin:nth-child(3n+2) .cover{--cv:var(--c-sage)}
+.pin:nth-child(3n) .cover{--cv:var(--c-sand)}
+.cover::before{content:"";position:absolute;inset:0;opacity:.5;background-image:var(--pat)}
+.cover b{position:relative;font-family:var(--display);font-style:italic;font-weight:600;font-size:76px;line-height:.8;color:var(--ink);opacity:.22}
+.cover em{position:absolute;right:18px;top:14px;font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+.pat-dots{--pat:radial-gradient(circle at 1px 1px,var(--rose) 1.4px,transparent 1.6px);background-size:18px 18px}
+.pat-lines{--pat:repeating-linear-gradient(135deg,transparent 0 12px,var(--sage) 12px 13px)}
+.pat-rings{--pat:radial-gradient(circle at 85% 20%,transparent 0 26px,var(--sand) 27px 28px,transparent 29px 46px,var(--sand) 47px 48px,transparent 49px)}
+.pin-body{padding:20px 22px 24px}
+.pin h3{font-family:var(--display);font-style:italic;font-weight:600;font-size:27px;line-height:1.1;margin:0 0 4px}
+.pin .kind{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);margin:0 0 12px}
+.pin p{font-size:15px;color:var(--soft)}
+.pin .tags li{font-size:12px;padding:3px 11px;background:var(--pill);border:1px solid var(--line)}
+
+/* research */
+.research{padding:clamp(8px,2vw,16px) clamp(22px,4vw,40px)}
+.r-item{display:grid;grid-template-columns:1fr 1.3fr;gap:10px 40px;padding-block:28px;border-bottom:1px dashed var(--line)}
+.r-item:last-child{border:0}
+.r-item h3{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(26px,3.4vw,36px);line-height:1.1;margin:0}
+.r-item .kind{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);margin:6px 0 0}
+.r-item p{margin:0 0 12px;color:var(--soft)}
+.note{text-align:center;font-size:13px;color:var(--soft);margin:18px 0 0}
+
+/* leadership */
+.roles{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.role{padding:28px 26px;min-width:0}
+.role .yr{font-family:var(--script);font-size:24px;color:var(--rose-deep);line-height:1}
+.role h3{font-family:var(--display);font-style:italic;font-weight:600;font-size:28px;line-height:1.1;margin:6px 0 2px}
+.role .t{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin:0 0 14px}
+.role p:last-child{color:var(--soft);font-size:15px;margin:0}
+.strengths{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:28px 0 0;padding:0;list-style:none}
+.strengths li{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--soft)}
+.strengths li+li::before{content:"✿";margin-right:10px;color:var(--rose)}
+
+/* exploring */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.duo>div{padding:clamp(22px,4vw,36px);min-width:0}
+.duo h3{font-family:var(--display);font-style:italic;font-weight:600;font-size:30px;margin:0 0 16px}
+.duo ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.duo li{font-family:var(--display);font-size:22px;line-height:1.25}
+.duo li::before{content:"✿";color:var(--sage);margin-right:12px;font-size:16px}
+.steps li{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:baseline}
+.steps li::before{content:none}
+.steps b{font-style:italic;font-weight:600}
+.steps span{font-family:var(--body);font-size:14px;color:var(--soft)}
+
+/* connect */
+.connect{text-align:center;padding:clamp(36px,7vw,72px) clamp(20px,4vw,40px)}
+.connect .ask{font-family:var(--display);font-style:italic;font-size:clamp(20px,2.6vw,28px);color:var(--soft);max-width:32ch;margin:0 auto 18px;text-wrap:balance}
+.mail{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(26px,5.6vw,58px);line-height:1.1;overflow-wrap:anywhere;margin:0 0 26px;user-select:all}
+.quote{font-family:var(--script);font-size:clamp(22px,3vw,30px);color:var(--rose-deep);margin:30px 0 0}
+footer{text-align:center;font-size:12px;letter-spacing:.14em;color:var(--soft);padding-top:12px}
+
+@media (max-width:820px){
+  .about,.duo,.roles{grid-template-columns:1fr}
+  .tool-row,.r-item{grid-template-columns:1fr}
+  .steps li{grid-template-columns:80px 1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<nav aria-label="Sections"><ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#toolkit">Toolkit</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#research">Research</a></li>
+  <li><a href="#leadership">Leadership</a></li>
+  <li><a href="#connect">Connect</a></li>
+</ul></nav>
+
+<main class="wrap">
+
+<header class="hero">
+  <p class="hello">hello, I'm</p>
+  <h1><span>Varshitha</span> <span>Munnuru</span></h1>
+  <p class="sub">Computer Science &amp; Technology &middot; SIT Hyderabad</p>
+  <p class="tagline">Turning ideas into practical technology.</p>
+  <ul class="chips"><li>Learn</li><li>Build</li><li>Research</li><li>Create impact</li></ul>
+  <div class="links">
+    <a class="btn solid" href="#projects">See my work</a>
+    <a class="btn" href="https://github.com/VarshithaMunnuru18" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/varshithamunnuru" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</header>
+
+<section id="about">
+  <p class="eyebrow">a little about me</p>
+  <h2>Where AI meets real problems</h2>
+  <div class="about">
+    <div class="glass">
+      <p class="lead">I'm a Computer Science &amp; Technology student at Symbiosis Institute of Technology, Hyderabad, interested in the space where AI, machine learning, data analytics and computer vision meet real-world problems.</p>
+      <p>I enjoy experimenting with AI tools, working with data, building technology-driven projects and exploring research questions that matter. Beyond the technical work, I contribute to student communities through leadership, event organisation, collaboration and research.</p>
+    </div>
+    <div class="glass">
+      <dl class="facts">
+        <div><dt>Degree</dt><dd>B.Tech, Computer Science &amp; Technology</dd></div>
+        <div><dt>Institute</dt><dd>Symbiosis Institute of Technology, Hyderabad</dd></div>
+        <div><dt>Years &middot; CGPA</dt><dd>2024 &ndash; 2028 &middot; 8.11 / 10</dd></div>
+        <div><dt>Current focus</dt><dd>AI &middot; ML &middot; Data &middot; Vision</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit">
+  <p class="eyebrow">what I work with</p>
+  <h2>Toolkit</h2>
+  <div class="tools glass">
+    <div class="tool-row"><h3>Languages &amp; data</h3><ul class="tags"><li>C</li><li>Python</li><li>NumPy</li><li>Pandas</li><li>Excel</li><li>Power BI</li></ul></div>
+    <div class="tool-row"><h3>AI, ML &amp; vision</h3><ul class="tags"><li>TensorFlow</li><li>Keras</li><li>Scikit-learn</li><li>OpenCV</li><li>Roboflow</li></ul></div>
+    <div class="tool-row"><h3>Development</h3><ul class="tags"><li>GitHub</li><li>VS Code</li><li>Flask</li><li>MySQL</li><li>XAMPP</li></ul></div>
+    <div class="tool-row"><h3>AI tools</h3><ul class="tags"><li>ChatGPT</li><li>Claude</li><li>Google Gemini</li></ul></div>
+    <div class="tool-row"><h3>Areas</h3><ul class="tags"><li>Data analytics</li><li>Deep learning</li><li>Image processing</li></ul></div>
+  </div>
+</section>
+
+<section id="projects">
+  <p class="eyebrow">things I've built</p>
+  <h2>Selected projects</h2>
+  <div class="pins">
+
+    <article class="pin glass">
+      <div class="cover pat-dots" style="--h:190px"><em>AI &middot; Data</em><b>01</b></div>
+      <div class="pin-body">
+        <h3>Smart Traffic Prediction</h3>
+        <p class="kind">Traffic &amp; accident prevention</p>
+        <p>An AI-driven approach to understanding traffic behaviour and spotting situations that lead to congestion and accidents, with data-driven recommendations.</p>
+        <ul class="tags"><li>TensorFlow</li><li>Keras</li><li>NLP</li><li>Scikit-learn</li><li>NumPy</li><li>Pandas</li></ul>
+      </div>
+    </article>
+
+    <article class="pin glass">
+      <div class="cover pat-lines" style="--h:130px"><em>Analytics</em><b>02</b></div>
+      <div class="pin-body">
+        <h3>Digital Reliability Scoring System</h3>
+        <p class="kind">DRSS</p>
+        <p>Treats digital reliability as a measurable variable instead of relying only on user ratings. It looks at crash rate, latency variation, error density and recovery rate.</p>
+        <ul class="tags"><li>Python</li><li>Flask</li><li>MySQL</li><li>Data analytics</li></ul>
+      </div>
+    </article>
+
+    <article class="pin glass">
+      <div class="cover pat-rings" style="--h:170px"><em>Computer vision</em><b>03</b></div>
+      <div class="pin-body">
+        <h3>Neon Air Draw</h3>
+        <p class="kind">AI spatial interface</p>
+        <p>A computer-vision interface that uses hand gestures and spatial movement for real-time digital interaction.</p>
+        <ul class="tags"><li>OpenCV</li><li>Computer vision</li><li>AI</li></ul>
+      </div>
+    </article>
+
+    <article class="pin glass">
+      <div class="cover pat-dots" style="--h:120px"><em>IoT</em><b>04</b></div>
+      <div class="pin-body">
+        <h3>Smart Agriculture for Hilly Regions</h3>
+        <p class="kind">IoT concept</p>
+        <p>Sensor-based agricultural monitoring designed for challenging, hilly environments.</p>
+        <ul class="tags"><li>NodeMCU ESP8266</li><li>Ultrasonic sensor</li><li>IoT</li></ul>
+      </div>
+    </article>
+
+    <article class="pin glass">
+      <div class="cover pat-rings" style="--h:150px"><em>Systems</em><b>05</b></div>
+      <div class="pin-body">
+        <h3>Movie Recommendation System</h3>
+        <p class="kind">Data structures in C</p>
+        <p>Recommendation logic built on organising and searching data with fundamental data structures.</p>
+        <ul class="tags"><li>C</li><li>Data structures</li></ul>
+      </div>
+    </article>
+
+    <article class="pin glass">
+      <div class="cover pat-lines" style="--h:110px"><em>Systems</em><b>06</b></div>
+      <div class="pin-body">
+        <h3>Parking Lot System</h3>
+        <p class="kind">Parking management</p>
+        <p>Organises vehicle information, parking allocation and available spaces.</p>
+        <ul class="tags"><li>Data organisation</li><li>Space allocation</li></ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="research">
+  <p class="eyebrow">questions I'm chasing</p>
+  <h2>Research</h2>
+  <div class="research glass">
+    <div class="r-item">
+      <div><h3>AI-Based Blood Group Detection</h3><p class="kind">Deep learning &amp; computer vision</p></div>
+      <div><p>A computer-vision and deep-learning approach to detecting blood group from fingerprint images, using image processing and classification.</p><ul class="tags"><li>TensorFlow</li><li>Keras</li><li>OpenCV</li><li>Roboflow</li><li>NumPy</li><li>Pandas</li></ul></div>
+    </div>
+    <div class="r-item">
+      <div><h3>Digital Reliability Scoring</h3><p class="kind">Reliability &amp; data analytics</p></div>
+      <div><p>How the reliability of a digital platform can be quantified through measurable system-performance indicators.</p><ul class="tags"><li>Reliability analysis</li><li>Performance metrics</li><li>Data analytics</li></ul></div>
+    </div>
+    <div class="r-item">
+      <div><h3>Smart Agriculture</h3><p class="kind">IoT for hilly regions</p></div>
+      <div><p>Sensor-based agricultural monitoring approaches for geographically challenging environments.</p><ul class="tags"><li>IoT</li><li>Sensors</li><li>Agricultural monitoring</li></ul></div>
+    </div>
+  </div>
+  <p class="note">Research papers on these topics were submitted for academic conference consideration.</p>
+</section>
+
+<section id="leadership">
+  <p class="eyebrow">beyond the code</p>
+  <h2>Leadership &amp; campus</h2>
+  <div class="roles">
+    <div class="role glass"><span class="yr">2025&ndash;26</span><h3>IEEE Education Society</h3><p class="t">Chairperson</p><p>Led the student branch chapter and contributed to technical and educational activities, coordination and student engagement.</p></div>
+    <div class="role glass"><span class="yr">2025&ndash;26</span><h3>Rotaract Club</h3><p class="t">Chairperson</p><p>Coordinated student initiatives, events and community activities, working with teams to plan and run programmes.</p></div>
+    <div class="role glass"><span class="yr">2025&ndash;26</span><h3>Campus Wellness Advisory Committee</h3><p class="t">Female Head</p><p>Contributed to student-focused initiatives, campus engagement and wellness activities.</p></div>
+  </div>
+  <ul class="strengths"><li>Leadership</li><li>Event management</li><li>Teamwork</li><li>Communication</li><li>Collaboration</li></ul>
+</section>
+
+<section id="exploring">
+  <p class="eyebrow">right now</p>
+  <h2>Exploring &amp; how I work</h2>
+  <div class="duo">
+    <div class="glass">
+      <h3>Currently exploring</h3>
+      <ul><li>AI-powered applications</li><li>Deep learning</li><li>Computer vision</li><li>Data analytics</li><li>Research &amp; emerging technologies</li></ul>
+    </div>
+    <div class="glass">
+      <h3>How I like to work</h3>
+      <ul class="steps">
+        <li><b>Learn</b><span>Understand the problem and the technology.</span></li>
+        <li><b>Build</b><span>Turn ideas into working solutions.</span></li>
+        <li><b>Research</b><span>Question, experiment and explore.</span></li>
+        <li><b>Improve</b><span>Learn from every iteration.</span></li>
+        <li><b>Impact</b><span>Build technology that has purpose.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="connect">
+  <div class="connect glass">
+    <p class="eyebrow">say hello</p>
+    <h2>Let's connect</h2>
+    <p class="ask">Interested in technology, research, collaboration or simply exchanging ideas?</p>
+    <p class="mail" id="mail">varshithamunnuru@gmail.com</p>
+    <div class="links">
+      <button class="btn solid" id="copy" type="button">Copy email</button>
+      <a class="btn" href="https://www.linkedin.com/in/varshithamunnuru" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/VarshithaMunnuru18" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="quote">Learn continuously. Build thoughtfully. Create meaningful impact.</p>
+  </div>
+</section>
+
+<footer>&copy; Varshitha Munnuru &middot; Computer Science &amp; Technology &middot; 2024&ndash;2028</footer>
+</main>
+
+<script>
+(function(){
+  var btn=document.getElementById('copy'),mail=document.getElementById('mail');
+  btn.addEventListener('click',function(){
+    var done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy email'},1800)};
+    var fallback=function(){try{var r=document.createRange();r.selectNodeContents(mail);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected, press copy'}catch(e){}};
+    try{navigator.clipboard.writeText(mail.textContent).then(done,fallback)}catch(e){fallback()}
+  });
+})();
+</script>
+</body>
+</html>
