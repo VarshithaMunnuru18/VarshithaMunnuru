@@ -1,78 +1,149 @@
 
-# Hi, I'm Varshitha Munnuru 👋
+# Hi there, I'm Varshitha Munnuru 👋
 
-### Computer Science & Technology Student | Data Analytics | AI | Computer Vision
+### Computer Science Student | Data Analytics | AI & Machine Learning | Computer Vision
 
-I'm a Computer Science student at Symbiosis Institute of Technology, Hyderabad, interested in Data Analytics, Artificial Intelligence, Computer Vision, and Deep Learning. I enjoy learning new technologies and building data-driven solutions.
+I'm a Computer Science and Technology undergraduate at Symbiosis Institute of Technology, Hyderabad, interested in data-driven solutions, artificial intelligence, deep learning, computer vision, and research.
 
-## 👩‍💻 About Me
+I enjoy exploring challenging technical problems, developing practical projects, and continuously expanding my knowledge of emerging technologies.
 
-- 🎓 Pursuing B.Tech in Computer Science and Technology (2024–2028)
-- 📊 Interested in Data Analytics and data-driven decision-making
-- 🤖 Exploring Deep Learning, Computer Vision, and Image Processing
-- 🛠️ Building projects and improving my technical skills
-- 🤝 Actively involved in student leadership and college initiatives
+---
 
-## 🧰 Skills & Tools
+## 🔬 Research Work
 
-**Data Analytics**
-- Microsoft Excel
-- SQL
-- Data Analysis and Visualization
+### 1. Fairness and Accuracy in Machine Learning
+- Comparing supervised machine learning classifiers based on predictive accuracy and fairness.
+- Investigating whether the most accurate model is also the fairest.
+- Evaluating differences in model outcomes across demographic groups.
+- Exploring fairness-aware techniques to reduce bias while maintaining predictive performance.
 
-**AI & Machine Learning**
-- Deep Learning
-- Computer Vision
-- Image Processing
+### 2. AI-Based Smart Traffic Prediction
+- Exploring traffic speed prediction using real-world traffic sensor data.
+- Working with the METR-LA traffic dataset.
+- Studying Long Short-Term Memory (LSTM) networks for time-series prediction.
+- Investigating traffic patterns and relationships between sensor locations.
 
-**Programming & Databases**
-- Python
-- MySQL
-- Data Structures in C
+### 3. Federated Supervised Learning Under Heterogeneous and Unreliable Clients
+- Exploring reliability-aware aggregation in federated learning.
+- Studying challenges caused by heterogeneous data distributions, class imbalance, and unreliable client updates.
+- Investigating approaches beyond conventional Federated Averaging (FedAvg).
 
-**AI & Development Tools**
-- ChatGPT
-- Claude
-- Google Gemini
-- Roboflow
-- GitHub
+*Research status and implementation details should be updated to reflect the work completed on each paper.*
+
+---
 
 ## 🚀 Projects
 
-### 1. Digital Reliability Scoring System (DRSS)
-A project concept for evaluating software reliability using factors such as crash rates, latency variation, error density, and recovery performance.
+### 1. Neon Air Draw — AI Spatial Interface
+- Exploring gesture-based interaction for drawing in the air.
+- Combining computer vision and AI concepts for spatial interaction.
+- Focus: Hand gestures, visual interaction, and intuitive interfaces.
 
-**Focus:** Software Reliability, Data Analysis, Scoring Systems
+### 2. Digital Reliability Scoring System (DRSS)
+- Designed around measuring digital platform reliability using system performance indicators.
+- Considers crash rate, latency variation, error density, and recovery efficiency.
+- Uses reliability indices to calculate a platform-level trust score.
+- Intended applications include banking, e-commerce, and digital services.
 
-### 2. Neon Air Draw — AI Spatial Interface
-An AI-based spatial drawing interface concept focused on interactive drawing experiences.
+### 3. AI-Based Smart Traffic Prediction and Accident Prevention
+- Explores traffic speed prediction using historical sensor data.
+- Uses the METR-LA dataset for traffic analysis.
+- Investigates LSTM-based time-series forecasting.
+- Aims to support congestion analysis and traffic-aware decision-making.
 
-**Focus:** Artificial Intelligence, Computer Vision, Interactive Interfaces
+### 4. Movie Recommendation System Using Data Structures
+- A project exploring movie recommendations using data structures and programming concepts.
+- Focuses on organizing movie information and retrieving relevant recommendations efficiently.
 
-### 3. AI-Based Smart Traffic Prediction
-A project exploring traffic-speed prediction using historical traffic data and deep learning techniques.
+### 5. Smart Lock Box with Temperature Display and PIN Security
+- Designed around PIN-based access control.
+- Uses an Arduino, DHT11 temperature sensor, servo motor, and buzzer.
+- Combines basic embedded systems and sensor integration.
 
-**Focus:** Deep Learning, Traffic Prediction, Time-Series Data
+### 6. Smart Agriculture for Hilly Regions
+- Explores sensor-based monitoring for agricultural environments.
+- Uses an ESP8266 NodeMCU and an ultrasonic sensor.
+- Focuses on practical IoT applications for agriculture.
 
-## 🏆 Leadership & Activities
+---
+
+## 🛠️ Technical Skills
+
+### Programming and Computer Science
+- Java
+- Data Structures and Algorithms
+- Python
+
+### Data Analytics and Databases
+- Microsoft Excel
+- SQL
+- MySQL
+- Power BI
+
+### AI, Machine Learning and Computer Vision
+- Supervised Machine Learning
+- Deep Learning
+- Computer Vision
+- Image Processing
+- LSTM Networks
+- Model Evaluation and Fairness Analysis
+
+### Frameworks and Development Tools
+- Flask
+- Git and GitHub
+- VS Code
+- XAMPP
+
+### AI and Productivity Tools
+- ChatGPT
+- Claude
+- Google Gemini
+- NotebookLM
+- Stitch
+- Roboflow
+
+---
+
+## 📚 Education
+
+**B.Tech — Computer Science and Technology**  
+Symbiosis Institute of Technology, Hyderabad  
+2024–2028
+
+**Intermediate**  
+NTR Junior College, Himayatnagar  
+2022–2024 | 88.8%
+
+---
+
+## 👩‍💼 Leadership and Activities
 
 - Chairperson — IEEE Education Society Student Branch Chapter
 - Chairperson — Rotaract Club
 - Chairperson — Campus Wellness Advisory Committee
-- Involved in student activities, event coordination, and community service
-
-## 🌐 Portfolio
-
-Explore my personal portfolio:
-
-**[Visit My Portfolio](https://varshithamunnuru18.github.io/VarshithaMunnuru/)**
-
-## 🤝 Connect With Me
-
-
-- **GitHub:** [VarshithaMunnuru18](https://github.com/VarshithaMunnuru18)
-- **LinkedIn:** [Varshitha Munnuru](https://www.linkedin.com/in/varshithamunnuru)
+- Secretary — Grievance Redressal Committee
+- Fresher's Day Event Head for the 2025–2029 batch
+- Actively involved in student leadership, event organization, and college initiatives.
 
 ---
 
-*Always learning, building, and exploring new ideas in data and AI.*
+## 💡 Areas of Interest
+
+- Data Analytics
+- Artificial Intelligence and Machine Learning
+- Computer Vision and Image Processing
+- Deep Learning
+- Research and Experimental Evaluation
+- Data-Driven Problem Solving
+
+---
+
+## 🌐 Connect With Me
+
+- LinkedIn: [Varshitha Munnuru](https://www.linkedin.com/in/varshithamunnuru)
+- GitHub: [VarshithaMunnuru18](https://github.com/VarshithaMunnuru18)
+- Email: varshithamunnuru@gmail.com
+
+---
+
+*Always learning, experimenting, and building data-driven solutions.*
